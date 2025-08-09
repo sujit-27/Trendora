@@ -19,8 +19,8 @@ export class AuthService{
       async loginWithGoogle() {
       return this.account.createOAuth2Session(
             "google",
-            import.meta.env.VITE_APPWRITE_OAUTH_SUCCESS_REDIRECT || "http://localhost:5173/",
-            import.meta.env.VITE_APPWRITE_OAUTH_FAILURE_REDIRECT || "http://localhost:5173/login"
+            import.meta.env.VITE_APPWRITE_OAUTH_SUCCESS_REDIRECT || "https://trendora-gules.vercel.app/",
+            import.meta.env.VITE_APPWRITE_OAUTH_FAILURE_REDIRECT || "https://trendora-gules.vercel.app/login"
       );
       }
 
