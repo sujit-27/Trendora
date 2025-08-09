@@ -17,11 +17,11 @@ export class AuthService{
       }
 
       async loginWithGoogle() {
-      return this.account.createOAuth2Session(
-            "google",
-            "https://trendora-gules.vercel.app/",
-            "https://trendora-gules.vercel.app/login"
-      );
+            return this.account.createOAuth2Session(
+                  "google",
+                  "https://trendora-gules.vercel.app/",
+                  "https://trendora-gules.vercel.app/login"
+            );
       }
 
       async createAccount({email,password,name,role = 'user'}){
