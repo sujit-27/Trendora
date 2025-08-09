@@ -19,8 +19,8 @@ export class AuthService{
       async loginWithGoogle() {
             return this.account.createOAuth2Session(
                   "google",
-                  "https://trendora-gules.vercel.app/",
-                  "https://trendora-gules.vercel.app/login"
+                  import.meta.env.VITE_APP_SUCCESS_URL,
+                  import.meta.env.VITE_APP_FAILURE_URL,
             );
       }
 
