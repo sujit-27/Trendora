@@ -1,6 +1,6 @@
 import authService from '@/lib/appwrite/auth';
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -50,8 +50,8 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-gray-800 mb-3">Shop</h3>
           <ul className="space-y-2">
-            <li><a href="/shop" className="hover:underline">My Shop</a></li>
-            <li><a href="/sitemap" className="hover:underline">Sitemap</a></li>
+            <li><Link to={"/shop"} className="hover:underline">My Shop</Link></li>
+            <li><Link to={"/sitemap"} className="hover:underline">Sitemap</Link></li>
           </ul>
         </div>
 
@@ -59,8 +59,8 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-gray-800 mb-3">Support</h3>
           <ul className="space-y-2">
-            <li><a href="/about-us" className="hover:underline">About Us</a></li>
-            <li><a href="/contact-us" className="hover:underline">Contact Us</a></li>
+            <li><Link to={"/about-us"} className="hover:underline">About Us</Link></li>
+            <li><Link to={"/contact-us"} className="hover:underline">Contact Us</Link></li>
           </ul>
         </div>
 
