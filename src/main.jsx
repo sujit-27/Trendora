@@ -44,7 +44,6 @@ import Sitemap from './pages/comps/FooterPages/Sitemap'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <>
         <Route path='/' element={<Layout/>}>
           <Route index element={<App/>}/>
           <Route path='/shop' element={<Shop/>}/>
@@ -83,7 +82,6 @@ const router = createBrowserRouter(
             <Route path='profile' element={<MyProfile/>}/>
           </Route>
         </Route>
-    </>
   )
 )
 
